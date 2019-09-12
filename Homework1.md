@@ -47,4 +47,18 @@ _____________
 4. **Natural Language Interfaces:** These accept requests written in English (or another language) and attempt to understand them. 
 
 
+_____________
+
+
+**Problem #5**
+
+_____________
+
+
+**Problem #6**
+
+**Ch. 3 #2:** 
+*Why are tuples in a relation not ordered?*
+
+A relation is a set of tuples and elements of a set have no order among them. Therefore, tuples in a relation have no particular order.  A tuple is a set of attributes in a relation schema and the order of attributes and their values is not that important as long as the correspondence between attributes and values is maintained. Each tuple is a mapping and because of this, a tuple can be considered as a set of pairs, where each pair gives the value of the mapping from an attribute A to a value v from dom(A). The ordering of attributes is not important because the attribute name appears with its value. 
 
