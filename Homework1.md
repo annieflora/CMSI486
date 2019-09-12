@@ -25,6 +25,7 @@ The columns Major, Course_number, Department, and Prerequisite_number would be u
 The database schema is the description of the database. It is specified during database design and is not expected to change frequently. The data in the database at a particular time is called a database state. It is the set of instances in the database and unlike schema it may change quite frequently. Many database states can be constructed to correspond to a particular database schema. 
 
 **Problem #4**
+
 **Ch. 2 #7:** 
 *Discuss the different types of user-friendly interfaces and the types of users who typically use each.*
 
