@@ -38,6 +38,13 @@ _____________
 **Ch. 2 #7:** 
 *Discuss the different types of user-friendly interfaces and the types of users who typically use each.*
 
-1. **Menu-Based Interfaces for Web Clients or Browsing:** These present the user with lists of options that lead the user through the formulation of a request. Users who would use this 
+1. **Menu-Based Interfaces for Web Clients or Browsing:** These present the user with lists of options that lead the user through the formulation of a request. These are commonly used in Web-based and browsing interfaces because the users are able to look at the contents of the database in an unstructured manner; many of the users may not know the commands and syntax of a query language which is why they would prefer menus.
+
+2. **Forms-based Interfaces:** These display a form to each user that the user can fill out to insert new data. Forms are usually designed for naive users as interfaces to canned transactions.
+
+3. **Graphical User Interfaces:** These display a schema to the user in diagrammatic form where the user can specify a query by manipulating the diagram. GUIs utilize both menus and forms which can be used by naive users like the above mentioned interfaces.
+
+4. **Natural Language Interfaces:** These accept requests written in English (or another language) and attempt to understand them. 
+
 
 
