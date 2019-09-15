@@ -44,7 +44,13 @@ _____________
 
 3. **Graphical User Interfaces:** These display a schema to the user in diagrammatic form where the user can specify a query by manipulating the diagram. GUIs utilize both menus and forms which can be used by naive users like the above mentioned interfaces.
 
-4. **Natural Language Interfaces:** These accept requests written in English (or another language) and attempt to understand them. 
+4. **Natural Language Interfaces:** These accept requests written in English (or another language) and attempt to understand them. Search engines, for example, take in a string of natural language words and match them to documents etc.
+
+5. **Speech and Output:** There is limited use of speech as an input query or result of a query. Applications with limited vocabularies (like a telephone directory) can use this though.
+
+6. **Interfaces for Parametric Users:** These allow people to use single function keys to invoke routine and repetitive actions. For example, bank tellers often use this type of interface because they have to perform repetitive functions like account deposits or withdrawals and balance inquiries.
+
+7. **Interfaces for the DBA:** Most database systems have commands that can *only* be used by the DBA staff. These commands include functions to create accounts, set system parameters, grant account authorization, change a schema, and reorganize the storage structure of the database.
 
 
 _____________
