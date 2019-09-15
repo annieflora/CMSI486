@@ -54,7 +54,6 @@ _____________
 
 7. **Interfaces for the DBA:** Most database systems have commands that can *only* be used by the DBA staff. These commands include functions to create accounts, set system parameters, grant account authorization, change a schema, and reorganize the storage structure of the database.
 
-
 _____________
 
 
@@ -84,3 +83,27 @@ _____________
 *Why do we designate one of the candidate keys of a relation to be the primary key?*
 
 We designate one of the candidate keys of a relation to be a primary key to make it easier to identify tuples in a relation. We choose a primary key with a single attribute or a smaller number of attributes. 
+
+_____________
+
+
+**Problem #8**
+
+**Ch. 3 #9:**
+*Define foreign key. What is this concept used for?*
+
+_____________
+
+
+**Problem #9**
+
+**Ch. 3 #13:**
+*Consider the relation CLASS(Course#, Univ_Section#, Instructor_name, Semester, Building_code, Room#, Time_period, Weekdays, Credit_hours). This represents classes taught in a university, with unique Univ_section#s. Identify what you think should be various candidate keys, and write in your own words the conditions or assumptions under which each candidate key would be valid.*
+
+_____________
+
+
+**Problem #10**
+
+**Ch. 3 #20 [part c only]:**
+*Recent changes in privacy laws have disallowed organizations from using Social Security numbers to identify individuals unless certain restrictions are satisfied. As a result, most U.S. universities cannot use SSNs as primary keys [except for financial data]. In practice, Sutend_id, a unique identifier assigned to every student, is likely to be used as the primary key rather than SSN since Student_id can be used throughout the system. What are the advantages and disadvantages of using generated [surrogate] keys?*
