@@ -1,4 +1,8 @@
 Amelia Jay and Annie Flora
+Assignment 1
+
+_____________
+
 
 **Problem #1**
 
@@ -92,6 +96,8 @@ _____________
 **Ch. 3 #9:**
 *Define foreign key. What is this concept used for?*
 
+**NEED TO DO**
+
 _____________
 
 
@@ -100,6 +106,8 @@ _____________
 **Ch. 3 #13:**
 *Consider the relation CLASS(Course#, Univ_Section#, Instructor_name, Semester, Building_code, Room#, Time_period, Weekdays, Credit_hours). This represents classes taught in a university, with unique Univ_section#s. Identify what you think should be various candidate keys, and write in your own words the conditions or assumptions under which each candidate key would be valid.*
 
+**NEED TO DO**
+
 _____________
 
 
@@ -107,3 +115,6 @@ _____________
 
 **Ch. 3 #20 [part c only]:**
 *Recent changes in privacy laws have disallowed organizations from using Social Security numbers to identify individuals unless certain restrictions are satisfied. As a result, most U.S. universities cannot use SSNs as primary keys [except for financial data]. In practice, Sutend_id, a unique identifier assigned to every student, is likely to be used as the primary key rather than SSN since Student_id can be used throughout the system. What are the advantages and disadvantages of using generated [surrogate] keys?*
+
+**NEED TO DO**
+
