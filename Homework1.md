@@ -20,6 +20,8 @@ The columns `Major`, `Course_number`, `Department`, and `Prerequisite_number` wo
 
 *b) Can you restructure the columns in the COURSE, SECTION, and PREREQUISITE tables so that only one column will need to be updated?*
 
+**NEED TO DO**
+
 _____________
 
 
@@ -57,6 +59,11 @@ _____________
 
 
 **Problem #5**
+
+**Ch. 2 #14:**
+*If you were designing a Web-based system to make airline reservations and sell airline tickets, which DBMS architecture would you choose from Section 2.5? Why? Why would the other architectures not be a good choice?*
+
+**NEED TO DO**
 
 _____________
 
