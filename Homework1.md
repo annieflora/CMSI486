@@ -1,6 +1,6 @@
-Amelia Jay and Annie Flora
+*Amelia Jay and Annie Flora*
 
-Assignment 1
+**Assignment 1**
 
 _____________
 
