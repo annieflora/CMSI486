@@ -67,7 +67,7 @@ _____________
 **Ch. 2 #14:**
 *If you were designing a Web-based system to make airline reservations and sell airline tickets, which DBMS architecture would you choose from Section 2.5? Why? Why would the other architectures not be a good choice?*
 
-**NEED TO DO**
+The best DBMS architecture for this Web-based system would be the three-tier architecture for web applications. This is because in this architecture the client is actually a GUI that the user interacts with. The data about the airline reservations is held in a database that the web server that the GUI lives on interacts with. The web interface calls upon functions from the web server, but the application logic and the GUI do not have to live on the same machine. When both the logic and GUI have to live on the same machine, there is a heavy load put on the server which is why the basic client/server architecture and the two-tier client/server architecture aren't the best choices. The centralized DBMS architecture would not work at all because users would not be able to be on the same machine as the database at an industrial scale.
 
 _____________
 
