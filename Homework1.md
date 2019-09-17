@@ -97,7 +97,7 @@ _____________
 **Ch. 3 #9:**
 *Define foreign key. What is this concept used for?*
 
-**NEED TO DO**
+A foreign key is a set of attributes in a relational schema that references the primary key of another relation. The foreign key and the primary key it references must have the same domain. This is used when cross referencing multiple relational schemas as well as joining data from multiple entities in order to manipulate it.
 
 _____________
 
