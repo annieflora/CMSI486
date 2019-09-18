@@ -21,11 +21,11 @@ _____________
 
 *a) If the name of the 'CS' [Computer Science] Department changes to 'CSSE' [Computer Science and Software Engineering] Department and the correspondingg prefix for the course number also changes, identify the columns in the database that would need to be updated.* 
 
-The columns `Major`, `Course_number`, `Department`, and `Prerequisite_number` would be updated. 
+The columns `Major`in STUDENT, `Course_number`in COURSE, `Course_number` in SECTION, `Department`in COURSE, and `Prerequisite_number` in PREREQUISITE would be updated. 
 
 *b) Can you restructure the columns in the COURSE, SECTION, and PREREQUISITE tables so that only one column will need to be updated?*
 
-**NEED TO DO**
+You could change the naming format of courses to simply use numbers. This way, courses would be represented with a Course_number that does not include CS or CSSE and therefore would not need to be updated becasue each class would have its own unique number sequence. With this formatting structure, the only one column that would need to be updated would be the `Department` in COURSE. 
 
 _____________
 
