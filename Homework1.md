@@ -25,7 +25,7 @@ The columns `Major`in STUDENT, `Course_number`in COURSE, `Course_number` in SECT
 
 *b) Can you restructure the columns in the COURSE, SECTION, and PREREQUISITE tables so that only one column will need to be updated?*
 
-You could change the naming format of courses to simply use numbers. This way, courses would be represented with a Course_number that does not include CS or CSSE and therefore would not need to be updated becasue each class would have its own unique number sequence. With this formatting structure, the only one column that would need to be updated would be the `Department` in COURSE. 
+You could change the naming format of courses to simply use numbers. This way, courses would be represented with a `Course_number` that does not include CS or CSSE and therefore would not need to be updated becasue each class would have its own unique number sequence. With this formatting structure, the only one column that would need to be updated would be the `Department` in COURSE. 
 
 _____________
 
@@ -107,7 +107,7 @@ _____________
 **Ch. 3 #13:**
 *Consider the relation CLASS(Course#, Univ_Section#, Instructor_name, Semester, Building_code, Room#, Time_period, Weekdays, Credit_hours). This represents classes taught in a university, with unique Univ_section#s. Identify what you think should be various candidate keys, and write in your own words the conditions or assumptions under which each candidate key would be valid.*
 
-**NEED TO DO**
+`Course#` and `Univ_Section#` could be candidate keys for the relation CLASS. The course number can be used if there is only one `Course#` per class and it is a unique number for each course. The problem states that each class is also said to have a unique `Univ_Section#` and if this is always the case, then this can be used as a candidate key as well. As long as no 2 courses have the same `Course#` or `Univ_Section#`, then these could both be used as candidate keys. The rest would not work since usually one `Instructor_name` could teach multiple classes, there are multiple classes per `Semester`, multiple classes per `Building_code` and `Room#`, multiple classes per `Time_period` and `Weekdays`, and multiple classes have the same `Credit_hours`.   
 
 _____________
 
