@@ -107,7 +107,7 @@ _____________
 **Ch. 3 #13:**
 *Consider the relation CLASS(Course#, Univ_Section#, Instructor_name, Semester, Building_code, Room#, Time_period, Weekdays, Credit_hours). This represents classes taught in a university, with unique Univ_section#s. Identify what you think should be various candidate keys, and write in your own words the conditions or assumptions under which each candidate key would be valid.*
 
-`Course#` and `Univ_Section#` could be candidate keys for the relation CLASS. The course number can be used if there is only one `Course#` per class and it is a unique number for each course. The problem states that each class is also said to have a unique `Univ_Section#` and if this is always the case, then this can be used as a candidate key as well. As long as no 2 courses have the same `Course#` or `Univ_Section#`, then these could both be used as candidate keys. The rest would not work since usually one `Instructor_name` could teach multiple classes, there are multiple classes per `Semester`, multiple classes per `Building_code` and `Room#`, multiple classes per `Time_period` and `Weekdays`, and multiple classes have the same `Credit_hours`.   
+`Course#` and `Univ_Section#` could be candidate keys for the relation CLASS. The `Course#` can be paired with `Univ_Section#` to create a unique value. Since each class will have a `Course#` which may not be unique to each class if there are multiple sections of all classes, but when paired with `Univ_Section#` then these can be unique and used as candidate keys. If the `Univ_Section#` is not unique to each semester, then the 2 paired with `Semester` can be candidate keys. You could also pair `Semester`, `Building_code`, `Room#`, `Time_period`, and `Weekdays`, assuming there is one class per room at a time, then you would also have a set of candidate keys. 
 
 _____________
 
@@ -115,7 +115,7 @@ _____________
 **Problem #10**
 
 **Ch. 3 #20 [part c only]:**
-*Recent changes in privacy laws have disallowed organizations from using Social Security numbers to identify individuals unless certain restrictions are satisfied. As a result, most U.S. universities cannot use SSNs as primary keys [except for financial data]. In practice, Sutend_id, a unique identifier assigned to every student, is likely to be used as the primary key rather than SSN since Student_id can be used throughout the system. What are the advantages and disadvantages of using generated [surrogate] keys?*
+*Recent changes in privacy laws have disallowed organizations from using Social Security numbers to identify individuals unless certain restrictions are satisfied. As a result, most U.S. universities cannot use SSNs as primary keys [except for financial data]. In practice, Student_id, a unique identifier assigned to every student, is likely to be used as the primary key rather than SSN since Student_id can be used throughout the system. What are the advantages and disadvantages of using generated [surrogate] keys?*
 
-**NEED TO DO**
+The advantages are that you ensure a unique identifier for each student. A disadvantages are they they have to be generated and this takes time and space. If there are a large number that need to be generated you could also run our of possible options if there is only a set amount of digits or letters that can be used. 
 
