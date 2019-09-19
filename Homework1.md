@@ -117,5 +117,5 @@ _____________
 **Ch. 3 #20 [part c only]:**
 *Recent changes in privacy laws have disallowed organizations from using Social Security numbers to identify individuals unless certain restrictions are satisfied. As a result, most U.S. universities cannot use SSNs as primary keys [except for financial data]. In practice, Student_id, a unique identifier assigned to every student, is likely to be used as the primary key rather than SSN since Student_id can be used throughout the system. What are the advantages and disadvantages of using generated [surrogate] keys?*
 
-The advantages are that you ensure a unique identifier for each student. A disadvantages are they they have to be generated and this takes time and space. If there are a large number that need to be generated you could also run our of possible options if there is only a set amount of digits or letters that can be used. 
+The advantages are that you ensure a unique identifier for each student. This will make sure there are no issues when referencing the data. The disadvantages are that they have to be generated and this takes time and space. If there are a large number of unique identifiers that need to be generated you could also run out of possible options if there is only a set amount of digits or letters that can be used. 
 
