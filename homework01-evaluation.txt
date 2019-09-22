@@ -1,0 +1,28 @@
+
+Annie and Amelia
+
+CMSI 486 Homework #1 Evaluation
+===============================
+
+One point awarded for each answer.
+Parial credit also awarded.
+====================================================================
+ 1. Chapter 1 #13:   1 pt.
+ 2. Chapter 1 #14a:  1 pt.
+ 3. Chapter 1 #14b:  1 pt. - while the number might work, it may not
+                              be optimal; you'd still need to have a
+                              "key" to relate the numbers to their
+                              departments...
+ 4. Chapter 2 #3:    1 pt.
+ 5. Chapter 2 #7:    1 pt.
+ 6. Chapter 2 #14:   1 pt.
+ 7. Chapter 3 #2:    1 pt.
+ 8. Chapter 3 #5:    1 pt.
+ 9. Chapter 3 #9:    1 pt.
+10. Chapter 3 #13:   1 pt.
+11. Chapter 3 #20c:  1 pt.
+
+Well-thought-out answers; nice work!
+
+Total score: 11 out of 11 = 100% which is an A-plus
+
