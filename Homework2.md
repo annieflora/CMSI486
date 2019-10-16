@@ -22,6 +22,7 @@ _____________
 **Ch 10, #3:**
 *Why is it important to design the schemas and applications in parallel?*
 
+It is important to design the schemas and applications in parallel because these two activities strongly influence eachother. 
 _____________
 **Problem #4**
 
