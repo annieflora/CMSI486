@@ -15,6 +15,7 @@ _____________
 **Ch 9, #7:** 
 *Is it possible to successfully map a binary M:N relationship type without requiring a new relation? Why or why not?*
 
+It is not possible to successfully map a binary M:N relationship without requiring a new relation. This is because of the M:N cardinality ratio. Creating the new relation with the primary keys of the relations that represent the participating entity types and including them as foreign keys, will create a primary key from their combination. 
 _____________
 **Problem #3**
 
