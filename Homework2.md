@@ -22,8 +22,7 @@ _____________
 **Ch 10, #3:**
 *Why is it important to design the schemas and applications in parallel?*
 
-It is important to design the schemas and applications in parallel because these two activities strongly influence eachother. For example, by analyzing database
-applications, we can identify data items that will be stored in the database. We also usually specify the design of database applications by referring to the database schema constructs. 
+It is important to design the schemas and applications in parallel because these two activities strongly influence eachother. For example, by analyzing database applications, we can identify data items that will be stored in the database. We also usually specify the design of database applications by referring to the database schema constructs. It ensures that the database will work well with the application. 
 _____________
 **Problem #4**
 
@@ -32,13 +31,7 @@ _____________
 
 **FINISH**
 
-The goal of conceptual schema design is to have a complete understanding of the
-database structure, meaning, interrelationships, and constraints. This is best achieved independently of a specific DBMS because each DBMS typically has idiosyncrasies and restrictions that should not be allowed to influence the conceptual schema design. The conceptual schema is invaluable as a stable description of the database
-contents. The choice of DBMS and later design decisions may change without
-changing the DBMS-independent conceptual schema. A good understanding of the conceptual schema is crucial for database users and application designers. Use of a high-level data model that is more expressive and general than the data models of individual DBMSs is therefore quite important. The diagrammatic description of the conceptual schema can serve as a vehicle of communication among database users, designers, and analysts. Because high-level data models usually rely on concepts that are easier to
-understand than lower-level DBMS-specific data models, or syntactic definitions
-of data, any communication concerning the schema design becomes
-more exact and more straightforward.
+The goal of conceptual schema design is to have a complete understanding of the database structure, meaning, interrelationships, and constraints. We want to map out all of the possible schemas of the database. This is best achieved independently of a specific DBMS because each DBMS typically has idiosyncrasies and restrictions that should not be allowed to influence the conceptual schema design. Use of a high-level data model that is more expressive and general than the data models of individual DBMSs is important. We use ER and EER models. 
 _____________
 **Problem #5**
 
