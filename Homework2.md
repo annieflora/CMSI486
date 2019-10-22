@@ -4,7 +4,7 @@
 
 _____________
 
-**Problem #1**
+**Problem #1**  TO DO
 
 **Ch 9, #3:** 
 *Try to map the relational schema in Figure 6.14 [page 189] into an ER schema. This is part of a process known as reverse engineering, in which a conceptual schema is created for an existing implemented database. State any assumptions you make.*
@@ -29,13 +29,11 @@ _____________
 **Ch 10, #4:**
 *Why is it important to use an implementation-independent data model during conceptual schema design? What models are used in current design tools? Wny?*
 
-**FINISH**
-
 The goal of conceptual schema design is to have a complete understanding of the database structure, meaning, interrelationships, and constraints. We want to map out all of the possible schemas of the database. This is best achieved independently of a specific DBMS because each DBMS typically has idiosyncrasies and restrictions that should not be allowed to influence the conceptual schema design. Use of a high-level data model that is more expressive and general than the data models of individual DBMSs is important. We use ER and EER models. 
 _____________
 **Problem #5**
 
-**Ch 10, #6:** 
+**Ch 10, #6:** TO DO 
 *Consider an actual application of a database system of interest. [NOTE: this means pick one you are familiar with to use for this exercise.] Define the requirements of the different levels of users in terms of data needed, types of queries, and transactions to be processed.*
 
 _____________
@@ -44,19 +42,22 @@ _____________
 **Ch 15, #5:**
 *What is a functional dependency? What are the possible sources of the information that defines the functional dependencies that hold among the attributes of a relation schema?*
 
-A functional dependency is a formal constraint among attributes that is the main tool for formally measuring the appropriateness of attribute groupings into relation schemas.  
+A functional dependency is a constraint between two sets of attributes from the database. It is a property of the semantics or meaning of the attributes. These dependencies are defined by the designer of the database. The values of the Y component of a tuple in r depend on, the values of the X component and alternatively, the values of the X component of a tuple uniquely determine the values of the Y component.
+
 _____________
 **Problem #7**
 
 **Ch 15, #9:**
 *What undesirable dependencies are avoided when a relation is in 2NF?*
 
+Second normal form (2NF) is based on the concept of full functional dependency and avoids all partial dependencies. A relation schema R is in 2NF if every nonprime attribute A in R is fully functionally dependent on the primary key of R. For relations where primary key contains multiple attributes, no nonkey attribute should be functionally dependent on a part of the primary key.
 _____________
 **Problem #8**
 
 **Ch 15, #10:** 
 *What undesirable dependencies are avoided when a relation is in 3NF?*
 
+Third normal form (3NF) is based on the concept of transitive dependency. A relation schema R is in 3NF if it satisfies 2NF and no nonprime attribute of R is transitively dependent on the primary key. The relation should not have a nonkey attribute functionally determined by another nonkey attribute (or by a set of nonkey attributes) and there should be no transitive dependency of a nonkey attribute on the primary key. 
 _____________
 **Problem #9**
 
