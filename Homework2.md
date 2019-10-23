@@ -31,7 +31,7 @@ _____________
 
 The goal of conceptual schema design is to have a complete understanding of the database structure, meaning, interrelationships, and constraints. We want to map out all of the possible schemas of the database. This is best achieved independently of a specific DBMS because each DBMS typically has idiosyncrasies and restrictions that should not be allowed to influence the conceptual schema design. Use of a high-level data model that is more expressive and general than the data models of individual DBMSs is important. We use ER and EER models. 
 _____________
-**Problem #5** TO DO 
+**Problem #5** 
 
 **Ch 10, #6:** 
 *Consider an actual application of a database system of interest. [NOTE: this means pick one you are familiar with to use for this exercise.] Define the requirements of the different levels of users in terms of data needed, types of queries, and transactions to be processed.*
