@@ -36,6 +36,7 @@ _____________
 **Ch 10, #6:** 
 *Consider an actual application of a database system of interest. [NOTE: this means pick one you are familiar with to use for this exercise.] Define the requirements of the different levels of users in terms of data needed, types of queries, and transactions to be processed.*
 
+An actual application for a database would be for one that stores a restaurant data. This DB would store varchars and integers for things such as the menu items and prices, or number of people per table. Front-end users would interact with the website to view menu items or prices and open tables for their party. Each table in the DB could represent each branch of the restaurant, since different locations will have different menus or open reservations. Other tables could hold general things that all locations have in common such as hours of operation or daily specials. The database administrators will be inputting the data and managing the website. They will only need to insert and delete data from this DB. The transactions made would be from the front-end users possibly reserving a table. 
 _____________
 **Problem #6**
 
