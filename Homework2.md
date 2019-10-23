@@ -31,9 +31,9 @@ _____________
 
 The goal of conceptual schema design is to have a complete understanding of the database structure, meaning, interrelationships, and constraints. We want to map out all of the possible schemas of the database. This is best achieved independently of a specific DBMS because each DBMS typically has idiosyncrasies and restrictions that should not be allowed to influence the conceptual schema design. Use of a high-level data model that is more expressive and general than the data models of individual DBMSs is important. We use ER and EER models. 
 _____________
-**Problem #5**
+**Problem #5** TO DO 
 
-**Ch 10, #6:** TO DO 
+**Ch 10, #6:** 
 *Consider an actual application of a database system of interest. [NOTE: this means pick one you are familiar with to use for this exercise.] Define the requirements of the different levels of users in terms of data needed, types of queries, and transactions to be processed.*
 
 _____________
@@ -64,18 +64,29 @@ _____________
 **Ch 15, #13:**
 *What is a multivalued dependencey? When does it arise?*
 
+Multivalued dependencies are a consequence of first normal form which disallows an attribute in a tuple to have a set of values, and the accompanying process of converting an unnormalized relation into 1NF. It arises if we have two or more multivalued independent attributes in the same relation schema. This leads to a problem of having to repeat every value of one of the attributes with every value of the other attribute to keep the relation state consistent and to maintain the independence among the attributes involved.
 _____________
 **Problem #10**
 
 **Ch 21, #1:**
 *What is meant by the concurrent execution of database transactions in a multiuser system? Dicscuss why concurrency control is needed, and give informal examples.*
 
+Concurrent execution of database transactions is when multiple transactions are being executed on a database at a current time. In
+these systems, hundreds or thousands of users are typically operating on the database by submitting transactions concurrently to the system. Examples are databases for banks or supermarkets, airline reservation system, etc. We need concurrency control because of problems such as: the lost update problem, the temporary update problem, the incorrect summary problem, and the unrepeatable read problem. An informational example of the lost update problem would be buying tickets for a concert. If two transactions are submitted at the same time for the last 2 tickets, and both individuals would like to purchase all remaining tickets, the values of tickets left will be wrong because the second person making the transaction will be seeing the value in the database from before the first transaction was made. 
 _____________
 **Problem #11**
 
 **Ch 21, #6:** 
 *Discuss the atomicity, durability, isolation, and consistency preservations properties of a database transaction.*
 
+Transactions should possess several properties, and they should be enforced by the concurrency control and recovery methods of the
+DBMS: 
+ - Atomicity =  A transaction is an atomic unit of processing; it should either be performed in its entirety or not performed at all.
+ - Consistency preservation: A transaction should be consistency preserving. This means that if it is completely executed from beginning to end without interference from other transactions, it should take the database from one consistent state to another.
+- Isolation: A transaction should appear as though it is being executed in isolation from other transactions. The execution of a transaction should not be interfered with by any other transactions executing concurrently.
+- Durability: The changes applied to the database by a committed
+transaction must persist in the database. These changes must not be
+lost because of any failure.
 _____________
 **Problem #12**
 
@@ -86,12 +97,16 @@ Node, relationship, property, and schema
 Node, relationship, property, and label
 Document, relationship, property, and collection*
 
+The four fundamental data constructs of Neo4j are: Node, relationship, property, and label. 
+
+Nodes: These are typically used to store entity information.
+Relationships: These are used to connect nodes to one another explicitly and therefore provide a means of structuring your entities. They are the equivalent of an explicitly stored, and therefore pre-calculated, join-like operation in a relational database management system. Relationships always have a type, a start- and an end-node, and a direction. They can be self-referencing/looping and can never be dangling.
+Properties: Both nodes and relationships are containers for properties, which are effectively name/value pairs.
+Labels: Labels are a means to quickly and efficiently create subgraphs. 
 _____________
 **Problem #13**
 
 **Ch 4, #3:** 
-*If you have a few entities in your dataset that have lots of relationships to other entities, then you can't use a graph database because of the dense node problem.
-True – you will have to use a relational system
-True – but there is no alternative, so you will have to live with it
-False – you can still use a graph database but it will be painfully slow for all queries
-False – you can very effectively use a graph database, but you should take precautions, for example, applying a fan-out pattern to your data*
+*If you have a few entities in your dataset that have lots of relationships to other entities, then you can't use a graph database because of the dense node problem.*
+
+False – you can very effectively use a graph database, but you should take precautions, for example, applying a fan-out pattern to your data
