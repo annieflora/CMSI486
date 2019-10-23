@@ -4,10 +4,12 @@
 
 _____________
 
-**Problem #1**  TO DO
+**Problem #1**
 
 **Ch 9, #3:** 
 *Try to map the relational schema in Figure 6.14 [page 189] into an ER schema. This is part of a process known as reverse engineering, in which a conceptual schema is created for an existing implemented database. State any assumptions you make.*
+
+![IMG_2188](https://user-images.githubusercontent.com/31746937/67425634-3cc13680-f58d-11e9-939d-082cef858a4a.jpeg)
 
 _____________
 **Problem #2**
