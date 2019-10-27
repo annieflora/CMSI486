@@ -1,0 +1,25 @@
+
+Annie and Amelia
+
+CMSI 486 Homework #2 Evaluation
+===============================
+
+One point awarded for each answer.
+Parial credit also awarded.
+====================================================================
+ 1. Elmastri CH9 #3        1 pt.
+ 2. Elmastri CH9 #7        1 pt.
+ 3. Elmastri CH10 #3       1 pt.
+ 4. Elmastri CH10 #4       1 pt.
+ 5. Elmastri CH10 #6       1 pt.
+ 6. Elmastri CH15 #5       1 pt.
+ 7. Elmastri CH15 #9       1 pt.
+ 8. Elmastri CH15 #10      1 pt.
+ 9. Elmastri CH15 #13      1 pt.
+10. Elmastri CH21 #1       1 pt.
+11. Elmastri CH21 #6       1 pt.
+12. Van Bruggen CH4 #1     1 pt.
+13. Van Bruggen CH4 #3     1 pt.
+
+Total score: 13 out of 13 = 100% which is an A-plus
+
