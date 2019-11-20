@@ -31,7 +31,10 @@ territories
 104
 ```
 *5. What is the last name of the employee who has the EmployeeID number 1?*
-
+```
+> db.employees.find( { EmployeeID: 1 }, { _id: 0, LastName: 1 } )
+{ "LastName" : "Davolio" }
+```
 *6. What are the EmployeeID numbers on orders which have an OrderID less than 10300?*
 
 *7. What are the Company Names of the suppliers?*
