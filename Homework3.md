@@ -86,17 +86,17 @@ territories
 { "SupplierID" : 19, "Phone" : "(617) 555-3267" }
 ```
 *10. What employee is responsible for the largest number of orders, and for how many orders is that employee responsible?*
+
+*11. How many territories have the RegionID value of "2"?  What are their territory descriptions? Be sure NOT to include the ID of the document, and ONLY show the territory descriptions.*
 ```
 >  db.orders.aggregate( [ { $group : { _id : "$EmployeeID", count : { $sum : 1 } } }, { $sort : { count : -1 } }, { $limit : 1 } ] )
 { "_id" : 4, "count" : 156 }
 ```
-*11. How many territories have the RegionID value of "2"?  What are their territory descriptions? Be sure NOT to include the ID of the document, and ONLY show the territory descriptions.*
+*12. What is the phone number of the shipper with the company name "United Package"? Be sure NOT to include the ID of the document in the output, ONLY the phone number.*
 ```
 > db.shippers.find( { CompanyName: "United Package" }, { _id: 0, Phone: 1 } )
 { "Phone" : "(503) 555-3199" }
 ```
-*12. What is the phone number of the shipper with the company name "United Package"? Be sure NOT to include the ID of the document in the output, ONLY the phone number.*
-
 
 BONUS:
 
