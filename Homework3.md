@@ -26,7 +26,10 @@ territories
 830
 ```
 *4. How many orders were handled by the person with EmployeeID number 8?*
-
+```
+> db.orders.count( {EmployeeID: 8} )
+104
+```
 *5. What is the last name of the employee who has the EmployeeID number 1?*
 
 *6. What are the EmployeeID numbers on orders which have an OrderID less than 10300?*
