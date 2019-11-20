@@ -16,7 +16,10 @@ suppliers
 territories
 ```
 *2. How many documents are in the "categories" collection?*
-
+```
+> db.categories.count()
+8
+```
 *3. How many documents are in the "orders" collection?*
 
 *4. How many orders were handled by the person with EmployeeID number 8?*
