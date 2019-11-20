@@ -36,7 +36,10 @@ territories
 { "LastName" : "Davolio" }
 ```
 *6. What are the EmployeeID numbers on orders which have an OrderID less than 10300?*
-
+```
+> db.orders.distinct( "EmployeeID", { "OrderID": { $lt: 10300 } } )
+[ 3, 4, 6, 5, 9, 1, 8, 2, 7 ]
+```
 *7. What are the Company Names of the suppliers?*
 
 *8. How many suppliers are there?*
