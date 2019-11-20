@@ -91,7 +91,10 @@ territories
 { "_id" : 4, "count" : 156 }
 ```
 *11. How many territories have the RegionID value of "2"?  What are their territory descriptions? Be sure NOT to include the ID of the document, and ONLY show the territory descriptions.*
-
+```
+> db.territories.aggregate( [ { $match: { "RegionID": 2 } }, { $group : { _id : {"TerritoryDescription": "$TerritoryDescription"} } }, { $group : { _id : null, count : { $sum: 1 }, results : { $push: "$$ROOT" } } } ] )
+{ "_id" : null, "count" : 15, "results" : [ { "_id" : { "TerritoryDescription" : "Phoenix" } }, { "_id" : { "TerritoryDescription" : "HoffmanEstates" } }, { "_id" : { "TerritoryDescription" : "MenloPark" } }, { "_id" : { "TerritoryDescription" : "SanFrancisco" } }, { "_id" : { "TerritoryDescription" : "Denver" } }, { "_id" : { "TerritoryDescription" : "Redmond" } }, { "_id" : { "TerritoryDescription" : "Bellevue" } }, { "_id" : { "TerritoryDescription" : "Campbell" } }, { "_id" : { "TerritoryDescription" : "Seattle" } }, { "_id" : { "TerritoryDescription" : "SantaClara" } }, { "_id" : { "TerritoryDescription" : "Chicago" } }, { "_id" : { "TerritoryDescription" : "ColoradoSprings" } }, { "_id" : { "TerritoryDescription" : "Scottsdale" } }, { "_id" : { "TerritoryDescription" : "SantaMonica" } }, { "_id" : { "TerritoryDescription" : "SantaCruz" } } ] }
+```
 *12. What is the phone number of the shipper with the company name "United Package"? Be sure NOT to include the ID of the document in the output, ONLY the phone number.*
 ```
 > db.shippers.find( { CompanyName: "United Package" }, { _id: 0, Phone: 1 } )
