@@ -76,7 +76,10 @@ territories
 ]
 ```
 *8. How many suppliers are there?*
-
+```
+> db.suppliers.count()
+29
+```
 *9. What is the supplier ID and phone number for the supplier in Boston, Mass.? Be sure NOT to include the ID of the document...*
 
 *10. What employee is responsible for the largest number of orders, and for how many orders is that employee responsible?*
