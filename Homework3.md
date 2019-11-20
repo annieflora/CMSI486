@@ -41,7 +41,40 @@ territories
 [ 3, 4, 6, 5, 9, 1, 8, 2, 7 ]
 ```
 *7. What are the Company Names of the suppliers?*
-
+```
+> db.suppliers.distinct( "CompanyName" )
+[
+	"New Orleans Cajun Delights",
+	"Cooperativa de Quesos 'Las Cabras'",
+	"Tokyo Traders",
+	"Exotic Liquids",
+	"Grandma Kelly's Homestead",
+	"Pavlova",
+	"Specialty Biscuits",
+	"Mayumi's",
+	"Refrescos Americanas LTDA",
+	"PB Knäckebröd AB",
+	"Plutzer Lebensmittelgroßmärkte AG",
+	"Heli Süßwaren GmbH & Co. KG",
+	"Nord-Ost-Fisch Handelsgesellschaft mbH",
+	"Formaggi Fortini s.r.l.",
+	"Norske Meierier",
+	"Bigfoot Breweries",
+	"Svensk Sjöföda AB",
+	"Aux joyeux ecclésiastiques",
+	"New England Seafood Cannery",
+	"Leka Trading",
+	"Zaanse Snoepfabriek",
+	"Karkki Oy",
+	"Lyngbysild",
+	"G'day",
+	"Ma Maison",
+	"Pasta Buttini s.r.l.",
+	"Escargots Nouveaux",
+	"Gai pâturage",
+	"Forêts d'érables"
+]
+```
 *8. How many suppliers are there?*
 
 *9. What is the supplier ID and phone number for the supplier in Boston, Mass.? Be sure NOT to include the ID of the document...*
