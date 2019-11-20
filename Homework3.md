@@ -26,10 +26,12 @@
 
 
 BONUS:
+
 *13. How many documents are in the "order-details" collection?  How many in the "employee-territories" collection?*
 
 *14. How many orders were shipped to Albuquerque, NM?  What are the order numbers? Be sure NOT to include the ID of the document in the output, ONLY the Order ID numbers.*
-       
+
+------------
        
 **Neo4j**
 
@@ -59,6 +61,7 @@ BONUS:
 
 
 BONUS:
+
 *13. How many relationships are in the "order-details" edges set?  How many in the "employee-territories" edges set?*
 
 *14. How many orders were shipped to Albuquerque, NM?  What are the order numbers?*
