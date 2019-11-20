@@ -21,7 +21,10 @@ territories
 8
 ```
 *3. How many documents are in the "orders" collection?*
-
+```
+> db.orders.count()
+830
+```
 *4. How many orders were handled by the person with EmployeeID number 8?*
 
 *5. What is the last name of the employee who has the EmployeeID number 1?*
