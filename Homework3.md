@@ -81,7 +81,10 @@ territories
 29
 ```
 *9. What is the supplier ID and phone number for the supplier in Boston, Mass.? Be sure NOT to include the ID of the document...*
-
+```
+> db.suppliers.find( {City: "Boston"}, {_id: 0, SupplierID: 1, Phone: 1} )
+{ "SupplierID" : 19, "Phone" : "(617) 555-3267" }
+```
 *10. What employee is responsible for the largest number of orders, and for how many orders is that employee responsible?*
 
 *11. How many territories have the RegionID value of "2"?  What are their territory descriptions? Be sure NOT to include the ID of the document, and ONLY show the territory descriptions.*
