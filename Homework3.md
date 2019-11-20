@@ -1,7 +1,20 @@
 **Mongo DB**
 
 *1. What are the different collections in the Northwind database?*
-
+```
+> show collections
+categories
+customers
+employee-territories
+northwind
+order-details
+orders
+products
+regions
+shippers
+suppliers
+territories
+```
 *2. How many documents are in the "categories" collection?*
 
 *3. How many documents are in the "orders" collection?*
