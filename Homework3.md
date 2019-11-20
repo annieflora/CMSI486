@@ -91,7 +91,10 @@ territories
 { "_id" : 4, "count" : 156 }
 ```
 *11. How many territories have the RegionID value of "2"?  What are their territory descriptions? Be sure NOT to include the ID of the document, and ONLY show the territory descriptions.*
-
+```
+> db.shippers.find( { CompanyName: "United Package" }, { _id: 0, Phone: 1 } )
+{ "Phone" : "(503) 555-3199" }
+```
 *12. What is the phone number of the shipper with the company name "United Package"? Be sure NOT to include the ID of the document in the output, ONLY the phone number.*
 
 
