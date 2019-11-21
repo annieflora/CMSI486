@@ -240,17 +240,18 @@ MATCH (n:Supplier) RETURN count(n)
 ```
 MATCH (n:Suppliers) WHERE n.City = 'Boston' AND n.Region = 'MA' RETURN n.SupplierID, n.Phone
 
-"19"	"(617) 555-3267"
+19	"(617) 555-3267"
 
 ```
 
 *10. What employee is responsible for the largest number of orders, and for how many orders is that employee responsible?*
 
 ```
-MATCH (n:Orders) WHERE 
+MATCH (n:Orders) WHERE count(n.EmployeeID = MAX) RETURN n.EmployeeID
+MATCH (n:Orders) WHERE n.EmployeeID = 4 RETURN count(n)
 
+4	156
 ```
-
 *11. How many territories have the RegionID value of "2"?  What are their territory descriptions? You can use two queries.  Be sure to ONLY show the territory descriptions for that query.*
 
 ```
