@@ -129,7 +129,7 @@ BONUS:
 
 *1. What are the different collections in the Northwind database?*
 ```
-> CALL `db`.`labels`
+CALL `db`.`labels`
 
 "Product"
 "Categories"
@@ -143,7 +143,7 @@ BONUS:
 
 *2. How many documents are in the "categories" label set?*
 ```
-> MATCH (n:Category) RETURN count(n)
+MATCH (n:Category) RETURN count(n)
 
 8
 
@@ -152,7 +152,7 @@ BONUS:
 *3. How many documents are in the "orders" label set?*
 
 ```
-> MATCH (n:Order) RETURN count(n)
+MATCH (n:Order) RETURN count(n)
 
 830
 
@@ -160,14 +160,14 @@ BONUS:
 
 *4. How many orders were handled by the person with EmployeeID number 8?*
 ```
-> MATCH (n:Orders) WHERE n.EmployeeID = '8' RETURN count(n)
+MATCH (n:Orders) WHERE n.EmployeeID = '8' RETURN count(n)
 
 104
 
 ```
 *5. What is the last name of the employee who has the EmployeeID number 1?*
 ```
-> MATCH (n:Employee) WHERE n.employeeID = '1' RETURN n.lastName
+MATCH (n:Employee) WHERE n.employeeID = '1' RETURN n.lastName
 
 "Davolio" 
 ```
@@ -175,7 +175,7 @@ BONUS:
 *6. What are the EmployeeID numbers on orders which have an OrderID less than 10300?*
 
 ```
-> MATCH (n:Orders) WHERE n.OrderID < '10300' RETURN DISTINCT n.EmployeeID
+MATCH (n:Orders) WHERE n.OrderID < '10300' RETURN DISTINCT n.EmployeeID
 
 "5"          
 "6"           
@@ -192,7 +192,7 @@ BONUS:
 *7. What are the Company Names of the suppliers?*
 
 ```
-> MATCH (n:Supplier) RETURN n.companyName
+MATCH (n:Supplier) RETURN n.companyName
 
 "Exotic Liquids"
 "New Orleans Cajun Delights"
@@ -229,7 +229,7 @@ BONUS:
 *8. How many suppliers are there?*
 
 ```
-> MATCH (n:Supplier) RETURN count(n)
+MATCH (n:Supplier) RETURN count(n)
 
 29
 
@@ -237,7 +237,7 @@ BONUS:
 *9. What is the supplier ID and phone number for the supplier in Boston, Mass.?*
 
 ```
-> MATCH (n:Suppliers) WHERE n.City = 'Boston' AND n.Region = 'MA' RETURN n.SupplierID, n.Phone
+MATCH (n:Suppliers) WHERE n.City = 'Boston' AND n.Region = 'MA' RETURN n.SupplierID, n.Phone
 
 "19"	"(617) 555-3267"
 
@@ -246,13 +246,34 @@ BONUS:
 *10. What employee is responsible for the largest number of orders, and for how many orders is that employee responsible?*
 
 ```
-
+MATCH (n:Orders) WHERE 
 
 ```
 
 *11. How many territories have the RegionID value of "2"?  What are their territory descriptions? You can use two queries.  Be sure to ONLY show the territory descriptions for that query.*
 
 ```
+MATCH (n:Territory) WHERE n.regionID = '2' RETURN count(n)
+
+15
+
+MATCH (n:Territory) WHERE n.regionID = '2' RETURN n.TerritoryDescription
+
+"HoffmanEstates"
+"Chicago"
+"Denver"
+"ColoradoSprings"
+"Pheonix"
+"Scottsdale"
+"SantaMonica"
+"MenloPark"
+"SanFrancisco"
+"Campbell"
+"SantaClara"
+"SantaCruz"
+"Bellevue"
+"Redmond"
+"Seattle"
 ```
 
 *12. What is the phone number of the shipper with the company name "United Package"? Be sure to ONLY include the phone number in the result.*
