@@ -248,7 +248,7 @@ MATCH (n:Suppliers) WHERE n.City = 'Boston' AND n.Region = 'MA' RETURN n.Supplie
 
 ```
 MATCH (n:Orders) WHERE count(n.EmployeeID = MAX) RETURN n.EmployeeID
-MATCH (n:Orders) WHERE n.EmployeeID = 4 RETURN count(n)
+MATCH (n:Orders) WHERE n.EmployeeID = '4' RETURN count(n)
 
 4	156
 ```
