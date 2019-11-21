@@ -131,16 +131,13 @@ BONUS:
 ```
 > CALL `db`.`labels`
 
-"Customer"
 "Product"
-"Supplier" 
-"Employee" 
-"Category" 
-"Order"    
-"Territory"
-"Shipper"  
-"Orders"   
-"Suppliers"
+"Categories"
+"Category"
+"Employee"
+"Supplier"
+"Customer"
+"Order"
 
 ```
 
@@ -197,35 +194,35 @@ BONUS:
 ```
 > MATCH (n:Supplier) RETURN n.companyName
 
-"Exotic Liquids"                        
-"New Orleans Cajun Delights"            
-"Grandma Kelly's Homestead"             
-"Tokyo Traders"                         
-"Cooperativa de Quesos 'Las Cabras'"    
-"Mayumi's"                              
-"Pavlova"                               
-"Specialty Biscuits"                    
-"PB Knäckebröd AB"                      
-"Refrescos Americanas LTDA"             
-"Heli Süßwaren GmbH & Co. KG"           
-"Plutzer Lebensmittelgroßmärkte AG"     
+"Exotic Liquids"
+"New Orleans Cajun Delights"
+"Grandma Kelly's Homestead"
+"Tokyo Traders"
+"Cooperativa de Quesos 'Las Cabras'"
+"Mayumi's"
+"Pavlova"
+"Specialty Biscuits"
+"PB Knäckebröd AB"
+"Refrescos Americanas LTDA"
+"Heli Süßwaren GmbH & Co. KG"
+"Plutzer Lebensmittelgroßmärkte AG"
 "Nord-Ost-Fisch Handelsgesellschaft mbH"
-"Formaggi Fortini s.r.l."               
-"Norske Meierier"                       
-"Bigfoot Breweries"                     
-"Svensk Sjöföda AB"                     
-"Aux joyeux ecclésiastiques"            
-"New England Seafood Cannery"           
-"Leka Trading"                          
-"Lyngbysild"                            
-"Zaanse Snoepfabriek"                   
-"Karkki Oy"                             
-"G'day"                                
-"Ma Maison"                             
-"Pasta Buttini s.r.l."                  
-"Escargots Nouveaux"                    
-"Gai pâturage"                          
-"Forêts d'érables"  
+"Formaggi Fortini s.r.l."
+"Norske Meierier"
+"Bigfoot Breweries"
+"Svensk Sjöföda AB"
+"Aux joyeux ecclésiastiques"
+"New England Seafood Cannery"
+"Leka Trading"
+"Lyngbysild"
+"Zaanse Snoepfabriek"
+"Karkki Oy"
+"G'day"
+"Ma Maison"
+"Pasta Buttini s.r.l."
+"Escargots Nouveaux"
+"Gai pâturage"
+"Forêts d'érables" 
 
 ```
 
@@ -250,9 +247,13 @@ BONUS:
 
 ```
 
+
 ```
 
 *11. How many territories have the RegionID value of "2"?  What are their territory descriptions? You can use two queries.  Be sure to ONLY show the territory descriptions for that query.*
+
+```
+```
 
 *12. What is the phone number of the shipper with the company name "United Package"? Be sure to ONLY include the phone number in the result.*
 
