@@ -92,7 +92,7 @@ territories
 ```
 *11. How many territories have the RegionID value of "2"?  What are their territory descriptions? Be sure NOT to include the ID of the document, and ONLY show the territory descriptions.*
 ```
-db.territories.find({"RegionID":2}, {"TerritoryDescription": 1, "_id": 0} )
+> db.territories.find({"RegionID":2}, {"TerritoryDescription": 1, "_id": 0} )
 { "TerritoryDescription" : "HoffmanEstates" }
 { "TerritoryDescription" : "Chicago" }
 { "TerritoryDescription" : "Denver" }
@@ -108,7 +108,8 @@ db.territories.find({"RegionID":2}, {"TerritoryDescription": 1, "_id": 0} )
 { "TerritoryDescription" : "Scottsdale" }
 { "TerritoryDescription" : "SanFrancisco" }
 { "TerritoryDescription" : "Seattle" }
-db.territories.find({"RegionID":2}, {"TerritoryDescription": 1, "_id": 0} ).count()
+
+> db.territories.find({"RegionID":2}, {"TerritoryDescription": 1, "_id": 0} ).count()
 15
 ```
 *12. What is the phone number of the shipper with the company name "United Package"? Be sure NOT to include the ID of the document in the output, ONLY the phone number.*
